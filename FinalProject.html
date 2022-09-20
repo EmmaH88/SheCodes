@@ -83,13 +83,11 @@
   }
 
         div{
-          color:#E78775
+          color:#E78775;
           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-align: center;
 
         }
-
-
-
       </style>
     </head>
 <body>
@@ -98,7 +96,9 @@
   
 <hr>
 <h4>A dedication to the deceased</h4>
-<img src="https://wallpaperset.com/w/full/7/8/3/463377.jpg" alt="Day of the dead" width="400">
+<img src="https://wallpaperset.com/w/full/7/8/3/463377.jpg" 
+alt="Day of the dead" 
+width="400">
 <p>The Day of the Dead <em>(el Día de los Muertos),</em> is a Mexican holiday where families welcome back the souls of their deceased relatives for a brief reunion that includes food, drink and celebration.
   <br />
   <br />
@@ -116,30 +116,30 @@
 <a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">🪦 Learn More Here 🪦</a>
 
 
-<button>Buy Sugar Skulls</button>
+<button>Sugar Skulls</button>
 
-<div>Coded by Emma H</div>
+<div>Coded by <br />
+  Emma H 
+🤩</div>
 
+<script>
 
+function sugarSkulls(){
+  let name = prompt("What is your first name?");
 
+  let question = prompt("Do You Like Sugar Skulls too?");
 
+ if (question === "yes" ) {
+  alert ("Thank you, " + name + "🌹💀")
+ } else {
+  alert ("Sorry to hear that " + name + "🙈🙊")
+  }
+ }
 
+  let button = document.querySelector("button"); 
+  button.addEventListener("click", sugarSkulls);
 
-
-
-
-
-
-
-<style>
-  <!== FOR THE JAVA BUTTON https://www.etsy.com/uk/search?q=sugar%20skulls ==!>
-</style>
-
-
-
-  </body>
- 
-      
-    
   
-</html>
+</script>
+  </body>
+ </html>
