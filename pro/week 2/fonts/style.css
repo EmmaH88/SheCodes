@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: #231d3c;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Bungee Spice", cursive;
+  font-weight: 900;
+  margin: 0;
+  font-size: 36px;
+  line-height: 48px;
+}
+.pawpaw {
+  display: block;
+  color: #ffaaa5;
+  font-size: 200px;
+}
+.pawpaw:hover {
+  color: #fdffab;
+}
+.dragon1 {
+  display: block;
+  color: #53a8b6;
+  font-size: 100px;
+}
+.dragon1:hover {
+  color: #bbe4e9;
+}
+
+.spider {
+  display: block;
+  color: #f5c7f7;
+  font-size: 50px;
+}
+.spider:hover {
+  color: #5e63b6;
+}
