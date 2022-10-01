@@ -1,0 +1,96 @@
+body {
+  background: radial-gradient(
+    401px at 50.6% -0.3%,
+    rgba(255, 255, 255, 0.31) 1.2%,
+    rgb(36, 212, 219) 100.2%
+  );
+}
+
+h1 {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(58, 16, 245, 0.4);
+  color: #113f67;
+  font-family: "Rhodium Libre", serif;
+}
+
+.logo {
+  display: block;
+  position: fixed;
+  right: 10px;
+  padding: 20px;
+}
+
+.city {
+  position: fixed;
+  top: 9px;
+  left: 30px;
+}
+
+.btn {
+  background: rgba(58, 16, 245, 0.4);
+  color: #38598b;
+  position: relative;
+  top: 1px;
+}
+
+h2 {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  color: #113f67;
+  font-family: "Rhodium Libre", serif;
+}
+
+.today {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  color: #38598b;
+  font-family: "Rhodium Libre", serif;
+  text-align: left;
+}
+
+.tday {
+  text-align: center;
+}
+
+.card-title1 {
+  color: #53a8b6;
+  font-family: "Rhodium Libre", serif;
+}
+
+.fa-solid {
+  color: #007cb9;
+}
+
+.more {
+  color: #79c2d0;
+  text-decoration: none;
+  background: #113f67;
+}
+
+.more:hover {
+  background: #53a8b6;
+}
+
+.card-title2 {
+  color: #79c2d0;
+  font-family: "Rhodium Libre", serif;
+}
+
+.card-title3 {
+  color: #53a8b6;
+  font-family: "Rhodium Libre", serif;
+}
+
+.card-title4 {
+  color: #79c2d0;
+  font-family: "Rhodium Libre", serif;
+}
+
+.card-title5 {
+  color: #53a8b6;
+  font-family: "Rhodium Libre", serif;
+}

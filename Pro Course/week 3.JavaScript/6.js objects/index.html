@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      let weather ={}
+
+weather = {
+  temp: 16,
+  humditiy: 40
+};
+console.log(weather);
+console.log(weather.temp);
+console.log(weather.humditiy);
+
+weather["windSpeed"] = 5;
+console.log(weather.windSpeed);
+
+console.log(weather["temp"]);
+console.log(weather["humditiy"]);
+console.log(weather["windSpeed"]);
+
+let forecast = [
+  {
+    day: "sunday",
+    temp: 17,
+  },
+
+  {
+    day: "monday",
+    temp: 26,
+  },
+
+  {
+    day: "tuesday",
+    temp: 23,
+  },
+
+  {
+    day: "wednesday",
+    temp: 19,
+  },
+
+  {
+    day: "thursday",
+    temp: 17,
+  },
+
+  {
+    day: "friday",
+    temp: 14,
+  }
+]
+console.log(forecast);
+console.log(forecast[0]);
+console.log(forecast[1]);
+console.log(forecast[2]);
+console.log(forecast[3]);
+console.log(forecast[4]);
+console.log(forecast[5]);
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/71c281ee62.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="src/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link?
+      href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>The Weather App. <br /></h1>
+    
+    <img
+      src="images/weatherapp.svg"
+      alt="Weather App"
+      width="250px"
+      class="logo"
+    />
+    <form>
+      <label for="City"> <strong>Enter your city</strong></label
+      ><br />
+      <input type="text" placeholder="City Name" />
+      <button type="button" class="btn btn-success">Search</button>
+    </form>
+    <h2>
+      Tuesday 27th September 2022 <br />
+      H:13&deg;C L:8&deg;C
+      <i class="fa-solid fa-cloud-sun-rain"></i>
+    </h2>
+    <p class="today">
+      Clear changing to cloudy by late morning.
+      <br />
+      🌞 Sunrise: 6:53 <br />
+      🌝 Sunset: 18:53
+    </p>
+    <h4 class="tday">🌡️ Your 5-Day Forecast 🌡️</h4>
+    <div class="container">
+      <div class="row row-cols-4 row-cols-md-4 g-5">
+        <div class="card" style="width: 14rem">
+          <div class="card-body">
+            <h5 class="card-title1">Wednesday 28th September 2022</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              H:14&deg;C L:9&deg;C <br /><i class="fa-solid fa-cloud"></i>
+            </h6>
+            <p class="card-text">
+              Partly cloudy changing to sunny intervals by late morning. ⛅
+              <br />
+              <i class="fa-solid fa-m"></i> UV <br /><i
+                class="fa-solid fa-l"
+              ></i>
+              Pollution
+            </p>
+            <button type="button" class="more">See More</button>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem">
+          <div class="card-body">
+            <h5 class="card-title2">Thursday 29th September 2022</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              H:16&deg;C L:7&deg;C <br />
+              <i class="fa-solid fa-cloud-sun"></i>
+            </h6>
+            <p class="card-text">
+              Cloudy changing to sunny intervals by early afternoon. 🌤️🌦️
+              <br />
+              <i class="fa-solid fa-m"></i> UV <br /><i
+                class="fa-solid fa-l"
+              ></i>
+              Pollution
+            </p>
+            <button type="button" class="more">See More</button>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem">
+          <div class="card-body">
+            <h5 class="card-title3">Friday 30th September 2022</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              H:14&deg;C L:11&deg;C <br />
+              <i class="fa-solid fa-cloud-showers-water"></i>
+            </h6>
+            <p class="card-text">
+              Cloudy changing to heavy rain in the afternoon. ☔
+              <br />
+              <i class="fa-solid fa-l"></i> UV <br />
+              <i class="fa-solid fa-l"></i> Pollution
+            </p>
+            <button type="button" class="more">See More</button>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem">
+          <div class="card-body">
+            <h5 class="card-title4">Saturday 1st October 2022</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              H:15&deg;C L:11&deg;C <br /><i
+                class="fa-solid fa-cloud-sun-rain"
+              ></i>
+            </h6>
+            <p class="card-text">
+              Clear changing to light showers by late morning. 🌦️
+              <br />
+              <i class="fa-solid fa-l"></i> UV <br />
+              <i class="fa-solid fa-l"></i> Pollution
+            </p>
+            <button type="button" class="more">See More</button>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem">
+          <div class="card-body">
+            <h5 class="card-title5">Sunday 2nd October 2022</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              H:16&deg;C L:11&deg;C <br/ ><i class="fa-solid fa-cloud-sun"></i>
+            </h6>
+            <p class="card-text">
+              Clear changing to light showers by lunchtime. 🌦️
+              <br />
+              <i class="fa-solid fa-l"></i> UV <br />
+              <i class="fa-solid fa-l"></i> Pollution
+            </p>
+
+            <button type="button" class="more">See More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
