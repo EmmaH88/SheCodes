@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hi</h1>
+    <script>
+      let user = {};
+      let student = {
+        firstName: "emma",
+        lastName: "hanby",
+      };
+      let anotherStudent = {
+        firstName: "andy",
+        lastName: "watson",
+        female: false,
+        greet: function () {
+          alert("hey");
+        },
+      };
+
+      let paris = {
+        name: "Paris",
+        country: "France",
+        language: "French",
+        temperature: 18,
+        capitalCity: true,
+      };
+
+      console.log(user);
+      console.log(student);
+      console.log(anotherStudent);
+      console.log(paris);
+      console.log(paris.temperature);
+      console.log(paris.country);
+      console.log(paris.language);
+      console.log(paris.name);
+      console.log(paris.capitalCity);
+
+      let cities = ["Brisbane", "Adalaide", "Perth"];
+      console.log(cities[0]);
+      console.log(cities[1]);
+      console.log(cities[2]);
+
+      let city = [
+        (newYork = {
+          name: "New York",
+          Country: "USA",
+          language: "English",
+          temperature: 20,
+          capitalCity: false,
+        }),
+        (leeds = {
+          name: "Leeds",
+          Country: "UK",
+          language: "English",
+          temperature: 14,
+          capitalCity: true,
+        }),
+        (rio = {
+          name: "Rio de Janeiro",
+          Country: "Brazil",
+          language: "Portugues",
+          temperature: 39,
+          capitalCity: true,
+        }),
+      ];
+      console.log(city[0].temperature);
+      console.log(city[1].temperature);
+      console.log(city[2].temperature);
+    </script>
+  </body>
+</html>

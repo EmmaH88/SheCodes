@@ -1,5 +1,5 @@
 let country = "Guinea Bissau";
-country = country.replace(" ", "-");
+country = country.replace("Guinea Bissau", "Guinea-Bissau");
 console.log(country);
 
 let city = " Sydney   ";
@@ -14,5 +14,5 @@ let attraction = "Opera House";
 attraction = attraction.toLowerCase();
 console.log(attraction);
 
-let sentence = `I went to visit the ${attraction} in ${city}, right next to my ${place}. Now, I'm getting ready for my trip to ${country}!`;
+let sentence = `I went to vist the ${attraction} in ${city} right next to my ${place}. Now i'm getting ready for my trip to ${country}!`;
 console.log(sentence);

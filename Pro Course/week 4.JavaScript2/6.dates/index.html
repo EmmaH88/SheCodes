@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dates</title>
+  </head>
+  <body>
+    <h1>Dates</h1>
+    <h2>🗓️</h2>
+    <script>
+      let now = new Date();
+      console.log(now);
+
+      let hour = now.getHours();
+      let minutes = now.getMinutes();
+      let seconds = now.getSeconds();
+
+      console.log(hour, minutes, seconds);
+
+      let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      let day = days[1];
+
+      let year = now.getFullYear();
+      console.log(year);
+
+      let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "Decomeber",
+      ];
+      let month = months[9];
+
+      let date = now.getDate();
+      console.log(date);
+
+      let sentence = `Today is ${day} ${date} ${month}, ${year} the time is ${hour}:${minutes}:${seconds}`;
+      console.log(sentence);
+    </script>
+  </body>
+</html>
