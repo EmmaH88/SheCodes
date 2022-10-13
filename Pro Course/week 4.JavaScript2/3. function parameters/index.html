@@ -7,17 +7,17 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>JS Functions</h1>
     <script>
-      function isWindy(speed) {
-        if (speed > 5) {
-          alert("It is Windy");
+      function welcomeUser() {
+        let temperature = 18;
+        if (temperature > 15) {
+          alert("It is a warm day");
         } else {
-          alert("It is not windy");
+          alert("It is a cold day");
         }
       }
-
-      isWindy(20);
-      isWindy(4);
+      welcomeUser();
     </script>
   </body>
 </html>

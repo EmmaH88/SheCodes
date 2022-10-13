@@ -9,6 +9,16 @@
     <h1>SheCodes Plus / Functions</h1>
     <div id="app"></div>
 
-    <script src="src/index.js"></script>
+    <script>
+      function isCold(temperature) {
+        return temperature <= 10;
+      }
+      let temperature = prompt("What is the temperature today?");
+      if (isCold(temperature)) {
+        alert("It is cold today 🥶");
+      } else {
+        alert("It is warm today 🥵");
+      }
+    </script>
   </body>
 </html>
