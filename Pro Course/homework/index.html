@@ -34,17 +34,33 @@
       width="250px"
       class="logo"
     />
-    <form>
-      <label for="City"> <strong>Enter your city</strong></label
+    <form class="search" id="search-box">
+      <label class="city"> <strong>Enter your city</strong></label
       ><br />
-      <input type="text" placeholder="City Name" />
-      <button type="button" class="btn btn-success">Search</button>
+      <input
+        type="search"
+        placeholder="City Name"
+        name="input-city"
+        class="input-city"
+        id="input-city"
+      />
+      <button type="button" class="btn btn-success" id="button-search">
+        Search
+      </button>
     </form>
-    <h2>
-      Tuesday 27th September 2022 <br />
-      H:13&deg;C L:8&deg;C
+    <ul>
+      <li class="currentCity" id="city">Castleford, West Yorkshire</li>
+      <li id="date"></li>
+    </ul>
+
+    <span>
+      13
+      <a href="#" class="celsius" id="celsius">&deg;C</a> |
+      <a href="#" class="fahrenheit" id="fahrenheit">&deg;F</a>
+
       <i class="fa-solid fa-cloud-sun-rain"></i>
-    </h2>
+    </span>
+
     <p class="today">
       Clear changing to cloudy by late morning.
       <br />

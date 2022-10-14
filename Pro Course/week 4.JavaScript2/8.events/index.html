@@ -7,9 +7,18 @@
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
   </head>
+
   <body>
-    <h1>Events 🤔</h1>
-    <button>Show Temperature</button>
-    <script src="src/index.js"></script>
+    <h1>Events 🥳</h1>
+    <a href="#" id="follow"> 🤓 Follow Me! </a>
+
+    <script>
+      function follow(event) {
+        event.preventDefault();
+        event.target.innerHTML = "Following 😈";
+      }
+      let followLink = document.querySelector("#follow");
+      followLink.addEventListener("click", follow);
+    </script>
   </body>
 </html>

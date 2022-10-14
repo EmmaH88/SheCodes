@@ -1,39 +1,58 @@
-let weather = {
-  paris: {
-    temp: 19.7,
-    humidity: 80,
-  },
-  tokyo: {
-    temp: 17.3,
-    humidity: 50,
-  },
-  lisbon: {
-    temp: 30.2,
-    humidity: 20,
-  },
-  sanFrancisco: {
-    temp: 20.9,
-    humidity: 100,
-  },
-  oslo: {
-    temp: -5,
-    humidity: 20,
-  },
-};
+function formatDate() {
+  let today = new Date();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 
-// write your code here
-let city = prompt("Enter a city");
-city = city.toLowerCase;
-if (weather[city] !== undefined) {
-  let temp = weather[city].temp;
-  let cTemp = Math.round(temp);
-  let fTemp = Math.round((temp * 9) / 5 + 32);
-  let humidity = weather[city].humidity;
-  alert(
-    `it's currently ${cTemp}°C/ ${fTemp}°F in ${city} with a humidity of ${humidity} %`
-  );
-} else {
-  alert(
-    `Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+sydney`
-  );
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "Decemeber",
+  ];
+  let year = today.getFullYear();
+  let day = days[today.getDay()];
+  let month = months[today.getMonth()];
+  let date = today.getDate();
+  let hours = today.getHours();
+  let minutes = today.getMinutes();
+
+  let li = document.querySelector("li#date");
+  li.innerHTML = `${day} ${month}, ${hours}:${minutes}`;
+  return date;
 }
+formatDate();
+
+function newCity(event) {
+  event.preventDefault();
+  let inputCity = document.querySelector("#input-city").value;
+  inputCity = inputCity.toLowerCase();
+  inputCity = inputCity.trim();
+  let newCity = document.querySelector("#city");
+  newCity.innerHTML = `${inputCity}`;
+}
+let searchBox = document.querySelector("#search-box");
+searchBox.addEventListener("submit", newCity);
+
+function measure(event) {
+  event.preventDefault();
+
+  let celsius = document.querySelector("#celsius");
+  celsius.innerHTML = `30 ${fahrenheit}`;
+}
+let change = document.querySelector("#celsius");
+measure.addEventListener("click", fahrenheit);

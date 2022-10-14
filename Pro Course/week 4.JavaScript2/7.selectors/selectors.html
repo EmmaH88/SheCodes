@@ -7,7 +7,19 @@
     <title>Selectors</title>
   </head>
   <body>
-    <h1>Selectors</h1>
-    <script></script>
+    <h1>🌞Selectors</h1>
+    <p>
+      <span class="emoji" id="selector-emoji"> 🥵 </span>
+      JS Selectors
+    </p>
+    <p>
+      <span class="emoji" id="event-emoji"> 👩🏼‍💻 JS Events </span>
+      JS Events
+    </p>
+    <script>
+      let emoji = document.querySelector("#event-emoji");
+      console.log(emoji);
+      emoji.innerHTML = "😋";
+    </script>
   </body>
 </html>

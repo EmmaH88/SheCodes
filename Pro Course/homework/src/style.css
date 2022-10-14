@@ -17,30 +17,47 @@ h1 {
 
 .logo {
   display: block;
-  position: fixed;
-  right: 10px;
+
+  position: relative;
   padding: 20px;
 }
 
+.search-box {
+  display: block;
+  position: relative;
+}
 .city {
-  position: fixed;
-  top: 9px;
-  left: 30px;
+  color: red;
+  position: relative;
+  font-size: 30px;
+  top: 2px;
+  left: 10px;
 }
 
 .btn {
   background: rgba(58, 16, 245, 0.4);
   color: #38598b;
-  position: relative;
-  top: 1px;
 }
 
 h2 {
   position: relative;
   top: 10px;
-  left: 5px;
+  left: 10px;
   color: #113f67;
   font-family: "Rhodium Libre", serif;
+}
+.celsius {
+  color: hotpink;
+}
+.fahrenheit {
+  color: purple;
+}
+
+ul {
+  list-style-type: none;
+}
+.currentCity {
+  color: blue;
 }
 
 .today {
