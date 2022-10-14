@@ -27,7 +27,8 @@ h1 {
   position: relative;
 }
 .city {
-  color: red;
+  color: rgb(36, 104, 73);
+  font-family: "Rhodium Libre", serif;
   position: relative;
   font-size: 30px;
   top: 2px;
@@ -39,25 +40,28 @@ h1 {
   color: #38598b;
 }
 
-h2 {
+span {
   position: relative;
   top: 10px;
   left: 10px;
   color: #113f67;
   font-family: "Rhodium Libre", serif;
 }
-.celsius {
-  color: hotpink;
-}
-.fahrenheit {
-  color: purple;
-}
 
 ul {
   list-style-type: none;
 }
 .currentCity {
-  color: blue;
+  color: #35495e;
+  font-family: "Rhodium Libre", serif;
+}
+.date {
+  color: #ff7e67;
+  font-family: "Rhodium Libre", serif;
+}
+.temperature {
+  font-size: 80px;
+  font-family: "Rhodium Libre", serif;
 }
 
 .today {
@@ -68,9 +72,15 @@ ul {
   font-family: "Rhodium Libre", serif;
   text-align: left;
 }
+.units {
+  color: #35495e;
+  font-size: 25px;
+  top: -20px;
+}
 
 .tday {
   text-align: center;
+  font-family: "Rhodium Libre", serif;
 }
 
 .card-title1 {
@@ -80,6 +90,8 @@ ul {
 
 .fa-solid {
   color: #007cb9;
+  text-align: right;
+  margin: 20px;
 }
 
 .more {
