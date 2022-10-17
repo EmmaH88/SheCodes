@@ -23,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -42,32 +43,26 @@
         placeholder="Search for a City..."
         name="input-city"
         class="input-city"
+        autofocus="on"
+        autocomplete="off"
         id="input-city"
       />
       <button type="button" class="btn btn-success" id="button-search">
         Search
       </button>
     </form>
-    <ul>
-      <li class="currentCity" id="city">🏙️Castleford, West Yorkshire</li>
-      <li class="date" id="date"></li>
-    </ul>
+
+    <h2 class="currentCity" id="newCity"></h2>
+
+    <h3 class="date" id="date"></h3>
+
     <div class="float-left">
-      <span class="temperature" id="temperature">13 </span>
-
-      <span><a href="#" class="units" id="celsius-link"
-        >&deg;C |
-        <a href="#" class="fahrenheit" id="fahrenheit-link">&deg;F</a>
-      </span>
-
-      <i class="fa-solid fa-cloud-sun-rain"></i>
+      <span class="temperature" id="temperatureElement"></span>
     </div>
-    <p class="today">
-      Clear changing to cloudy by late morning.
-      <br />
-      🌞 Sunrise: 6:53 <br />
-      🌝 Sunset: 18:53
-    </p>
+
+    <p class="today" id="today">Clear changing to cloudy by late morning.</p>
+    <p id="humdidty"></p>
+    <p id="windSpeed"></p>
     <h4 class="tday">🌡️ Your 5-Day Forecast 🌡️</h4>
     <div class="container">
       <div class="row row-cols-4 row-cols-md-4 g-5">

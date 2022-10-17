@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    <title>Document</title>
+    <style>
+      h1 {
+        color: rebeccapurple;
+      }
+      .temp {
+        color: pink;
+      }
+      .desc {
+        color: blueviolet;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="city"></h1>
+    <div id="temperature"></div>
+    <div id="temperature-description"></div>
+    <script>
+      let apiKey = "85bcdd2ad2afb7ce15a8242b1ff12dc1";
+      let city = "Leeds";
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=leeds&appid=85bcdd2ad2afb7ce15a8242b1ff12dc1&units=metric`;
+
+      function showTemperature(response) {
+        let temperature = Math.round(response.data.main.temp);
+        let temperatureElement = document.querySelector("#temperature");
+        let description = document.querySelector("#temperature-description");
+        temperatureElement.innerHTML = `${temperature}°C`;
+        description.innerHTML = response.data.weather[0].description;
+      }
+      let h1 = document.querySelector("#city");
+      h1.innerHTML = city;
+
+      axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+    </script>
+  </body>
+</html>

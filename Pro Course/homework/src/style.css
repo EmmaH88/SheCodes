@@ -26,11 +26,16 @@ h1 {
   display: block;
   position: relative;
 }
-.city {
+
+.input-city {
+  display: block;
+}
+.currentCity {
   color: rgb(36, 104, 73);
   font-family: "Rhodium Libre", serif;
   position: relative;
   font-size: 30px;
+  text-transform: capitalize;
   top: 2px;
   left: 10px;
 }

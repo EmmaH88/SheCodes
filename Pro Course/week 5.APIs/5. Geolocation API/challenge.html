@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <h1 id="heading">JavaScript Geolocation API</h1>
+
+    <h3>JS Challenge 1</h3>
+
+    <p>Log your current latitude and longitude using the Geolocation API</p>
+
+    <h3>JS Challenge 2</h3>
+    <p>Log the current temperature where you are.</p>
+
+    <h3>JS Challenge 3</h3>
+    <p>Change the h1 of this page by the current temperature</p>
+    <script>
+      function myWeather(response) {
+        console.log();
+        let temperature = Math.round(response.data.main.temp);
+        let heading = document.querySelector("h1");
+        heading.innerHTML = `The current temperature in Leeds is ${temperature}°C 😎`;
+      }
+
+      function myLocation(position) {
+        let latitude = position.coords.latitude;
+        let longitude = position.coords.longitude;
+        let units = "metric";
+        let apiKey = "85bcdd2ad2afb7ce15a8242b1ff12dc1";
+        let apiEndpoint = `https://api.openweathermap.org/data/2.5/weather?`;
+        let apiUrl = `${apiEndpoint}lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+        console.log(apiUrl);
+      }
+      axios.get(`${apiUrl}&appid=${apiKey}`).then(myWeather);
+      navigator.geolocation.getCurrentPosition(myLocation);
+    </script>
+  </body>
+</html>

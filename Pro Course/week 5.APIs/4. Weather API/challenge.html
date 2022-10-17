@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="temperature">JavaScript Open Weather API</h1>
+
+    <h3>JS Challenge 1</h3>
+    <p>Import Axios</p>
+
+    <h3>JS Challenge 2</h3>
+    <p>Get your API key and save in a variable called apiKey</p>
+
+    <h3>JS Challenge 3</h3>
+    <p>Get the API response for the weather in Sydney, using metrics unit</p>
+
+    <h3>JS Challenge 4</h3>
+    <p>Log the current temperature in Sydney</p>
+
+    <h3>JS Challenge 5</h3>
+    <p>
+      Replace the h1 of this page with the weather in Sydney: i.e: It is 19
+      degrees in Sydney
+    </p>
+    <script>
+      function showTemperature(response) {
+        let temperature = Math.round(response.data.main.temp);
+
+        let city = response.data.name;
+
+        let sentence = `It is ${temperature}°C in ${city} `;
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = sentence;
+      }
+      let apiKey = "85bcdd2ad2afb7ce15a8242b1ff12dc1";
+      let city = "Sydney";
+      let units = "metric";
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+
+      axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+    </script>
+  </body>
+</html>
