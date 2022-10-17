@@ -14,7 +14,7 @@
       src="https://kit.fontawesome.com/71c281ee62.js"
       crossorigin="anonymous"
     ></script>
-    <link href="src/style.css" rel="stylesheet" />
+    <link href="src/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,20 +50,27 @@
       <button type="button" class="btn btn-success" id="button-search">
         Search
       </button>
+
+      <button type="button" class="btn btn-success" id="button-location">
+        Current Location
+      </button>
     </form>
 
-    <h2 class="currentCity" id="newCity"></h2>
+    <div class="currentCity" id="city"></div>
 
-    <h3 class="date" id="date"></h3>
+    <h2 class="date" id="date"></h2>
+    <ul>
+      <li><span class="humidity" id="humidity"></span>%</li>
 
-    <div class="float-left">
-      <span class="temperature" id="temperatureElement"></span>
-    </div>
+      <li><span class="wind" id="wind"></span>Km/h</li>
 
-    <p class="today" id="today">Clear changing to cloudy by late morning.</p>
-    <p id="humdidty"></p>
-    <p id="windSpeed"></p>
-    <h4 class="tday">🌡️ Your 5-Day Forecast 🌡️</h4>
+      <li class="celsius">
+        <span class="temperature" id="temperature"></span>°C
+      </li>
+
+      <li><span class="description" id="temperature-description"></span></li>
+    </ul>
+    <h4 class="forecast">🌡️ Your 5-Day Forecast 🌡️</h4>
     <div class="container">
       <div class="row row-cols-4 row-cols-md-4 g-5">
         <div class="card" style="width: 14rem">
@@ -152,6 +159,6 @@
         </div>
       </div>
     </div>
-    <script src="src/script.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

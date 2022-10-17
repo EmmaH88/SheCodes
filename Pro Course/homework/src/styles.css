@@ -17,73 +17,67 @@ h1 {
 
 .logo {
   display: block;
-
+  font-size: 50px;
   position: relative;
   padding: 20px;
-}
-
-.search-box {
-  display: block;
-  position: relative;
 }
 
 .input-city {
   display: block;
 }
-.currentCity {
-  color: rgb(36, 104, 73);
-  font-family: "Rhodium Libre", serif;
+
+.search-box {
+  display: block;
+
   position: relative;
-  font-size: 30px;
+}
+
+.currentCity {
+  color: orangered;
+  font-family: "Rhodium Libre", serif;
+  font-size: 60px;
+  position: relative;
   text-transform: capitalize;
   top: 2px;
   left: 10px;
 }
 
 .btn {
-  background: rgba(58, 16, 245, 0.4);
-  color: #38598b;
+  background: indigo;
 }
 
-span {
-  position: relative;
-  top: 10px;
-  left: 10px;
-  color: #113f67;
-  font-family: "Rhodium Libre", serif;
-}
-
-ul {
-  list-style-type: none;
-}
-.currentCity {
-  color: #35495e;
-  font-family: "Rhodium Libre", serif;
-}
 .date {
-  color: #ff7e67;
+  color: blueviolet;
   font-family: "Rhodium Libre", serif;
+  font-size: 30px;
 }
+
+.humidity {
+  color: #007cb9;
+  font-size: 20px;
+}
+
+.wind {
+  font-size: 20px;
+}
+
 .temperature {
-  font-size: 80px;
-  font-family: "Rhodium Libre", serif;
+  color: rgb(36, 104, 73);
+  font-size: 20px;
 }
 
-.today {
-  position: relative;
-  top: 10px;
-  left: 5px;
-  color: #38598b;
-  font-family: "Rhodium Libre", serif;
-  text-align: left;
-}
-.units {
-  color: #35495e;
-  font-size: 25px;
-  top: -20px;
+.celsius {
+  color: rgb(36, 104, 73);
+  font-size: 20px;
 }
 
-.tday {
+.description {
+  color: #ff7e67;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.forecast {
+  margin-top: 20px;
   text-align: center;
   font-family: "Rhodium Libre", serif;
 }
