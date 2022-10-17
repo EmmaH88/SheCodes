@@ -13,37 +13,53 @@ h1 {
   text-shadow: 5px 5px 10px rgba(58, 16, 245, 0.4);
   color: #113f67;
   font-family: "Rhodium Libre", serif;
+  padding: 10px;
 }
 
 .logo {
   display: block;
-  font-size: 50px;
   position: relative;
   padding: 20px;
 }
 
+.city {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(58, 16, 245, 0.4);
+  color: magenta;
+  font-family: "Rhodium Libre", serif;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
 .input-city {
-  display: block;
+  padding: 5px;
+  margin: 20px;
 }
 
 .search-box {
   display: block;
-
   position: relative;
+  padding: 5px;
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
 }
 
 .currentCity {
-  color: orangered;
+  color: #f70776;
+  text-shadow: 5px 5px 10px rgba(58, 16, 245, 0.4);
   font-family: "Rhodium Libre", serif;
   font-size: 60px;
   position: relative;
   text-transform: capitalize;
   top: 2px;
   left: 10px;
-}
-
-.btn {
-  background: indigo;
+  padding: 30px;
+  margin: 0auto;
 }
 
 .date {
@@ -68,6 +84,12 @@ h1 {
 
 .celsius {
   color: rgb(36, 104, 73);
+  font-size: 20px;
+}
+
+.desc {
+  color: #ff7e67;
+  text-transform: capitalize;
   font-size: 20px;
 }
 

@@ -47,12 +47,12 @@
         autocomplete="off"
         id="input-city"
       />
-      <button type="button" class="btn btn-success" id="button-search">
-        Search
+      <button type="button" class="btn btn-light" id="button-search">
+        Search 🌏
       </button>
 
-      <button type="button" class="btn btn-success" id="button-location">
-        Current Location
+      <button type="button" class="btn btn-danger" id="button-location">
+        Current Location 📍
       </button>
     </form>
 
@@ -60,15 +60,19 @@
 
     <h2 class="date" id="date"></h2>
     <ul>
-      <li><span class="humidity" id="humidity"></span>%</li>
+      <li>Humidity: <span class="humidity" id="humidity"></span>%</li>
 
-      <li><span class="wind" id="wind"></span>Km/h</li>
+      <li>Wind Speed: <span class="wind" id="wind"></span>Km/h</li>
 
       <li class="celsius">
+        Current Temperature:
         <span class="temperature" id="temperature"></span>°C
       </li>
 
-      <li><span class="description" id="temperature-description"></span></li>
+      <li class="desc">
+        today's weather is
+        <span class="description" id="temperature-description"></span>
+      </li>
     </ul>
     <h4 class="forecast">🌡️ Your 5-Day Forecast 🌡️</h4>
     <div class="container">
