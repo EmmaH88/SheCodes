@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Timing Events</title>
+  </head>
+  <body>
+    <div id="hello">Hello</div>
+    <div id="date"></div>
+    <script>
+      function sayHello() {
+        let helloBox = document.querySelector("#hello");
+        helloBox.innerHTML = "HI!!";
+      }
+
+      function displayDate() {
+        let date = document.querySelector("#date");
+        date.innerHTML = new Date();
+      }
+      setTimeout(sayHello, 3000);
+      displayDate();
+      setInterval(displayDate, 1000);
+
+      //to be fancy
+      setTimeout(function () {
+        let helloBox = document.querySelector("#hello");
+        helloBox.innerHTML = "HI!!";
+      }, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Selector</title>
+    <style>
+      select {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="counrty">
+      <label for="countries">Which country would you like to search for?</label>
+      <select id="countries">
+        <option value="select a counrty">Select a Country</option>
+        <option value="uk">UK</option>
+        <option value="france">France</option>
+        <option value="italy">Italy</option>
+        <option value="usa">USA</option>
+      </select>
+    </form>
+    <script>
+      function showSelectedCountry(event) {
+        if (event.target.value.length > 0) {
+          if (event.target.value === "uk") alert("Hello!");
+        }
+        if (event.target.value === "italy") {
+          alert("Ciao!");
+        }
+        if (event.target.value === "usa") {
+          alert("Hi!");
+        }
+        if (event.target.value === "france") {
+          alert("Bonjour!");
+        }
+      }
+
+      let countrySelect = document.querySelector("#countries");
+      countrySelect.addEventListener("change", showSelectedCountry);
+    </script>
+  </body>
+</html>

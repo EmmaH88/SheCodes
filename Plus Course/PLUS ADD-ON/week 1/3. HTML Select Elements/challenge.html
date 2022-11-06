@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML Select Element</h1>
+
+    <h3>Challenge 1</h3>
+
+    <label for="fruits">What is your favourite fruit?</label>
+    <form action="fruits">
+      <select id="fruit">
+        <option id="selectfaveourite">Select your favourite</option>
+        <option id="apple">🍏Apple</option>
+        <option id="strawberry">🍓Strawberry</option>
+        <option id="melon">🍉Melon</option>
+        <option id="banana">🍌Banana</option>
+        <option id="orange">🍊Orange</option>
+      </select>
+    </form>
+
+    <h3>Challenge 2</h3>
+
+    <label for="favourite colour"></label>
+    <form action="colour">
+      <select id="favouriteColour"></select>
+        <option value="question">Pick your favourite colour</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+      </select>
+    </form>
+    <script>
+      function selectColour(event) {
+        if (event.target.value.length > 0) {
+          if (event.target.value === "red") alert("❤️");
+        }
+        if (event.target.value === "blue") {
+          alert("💙");
+        }
+        if (event.target.value === "yellow") {
+          alert("💛");
+        }
+      }
+
+      let colourSelect = document.querySelector("#favouriteColour");
+      colourSelect.addEventListener("change", selectColour);
+    </script>
+  </body>
+</html>

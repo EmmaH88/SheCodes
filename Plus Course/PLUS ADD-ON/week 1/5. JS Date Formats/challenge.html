@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  </head>
+  <body>
+    <h1>JS Date formats</h1>
+
+    <h3>Challenge 1</h3>
+
+    <h3>Challenge 2</h3>
+
+    <div id="current-date">👉 Date here 👈</div>
+
+    <h3>Challenge 3</h3>
+
+    <div id="future-date">👉 Date here 👈</div>
+
+    <script>
+      let today = moment().format("dddd, Do MMMM, YYYY");
+      let todayElement = document.querySelector("#current-date");
+      todayElement.innerHTML = today;
+
+      let tenYears = moment()
+        .add(10, "year")
+        .format("dddd, Do MMMM, YYYY. H:m:s");
+      let futureYearElement = document.querySelector("#future-date");
+      futureYearElement.innerHTML = `In 10 years it will be ${tenYears}`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Zones</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.38/moment-timezone-with-data-1970-2030.min.js"></script>
+  </head>
+  <body>
+    <h1>JS Time zones</h1>
+
+    <h3>Challenge 1</h3>
+    <p>Import moment.js and moment time zone</p>
+
+    <h3>Challenge 2</h3>
+
+    <div id="current-date">👉 Date here 👈</div>
+
+    <h3>Challenge 3</h3>
+
+    <div id="future-date">👉 Date here 👈</div>
+
+    <h3>Challenge 4</h3>
+
+    <div id="local-time-zone">👉 Time zone here 👈</div>
+
+    <script>
+      let honoluluTime = moment()
+        .tz("Pacific/Honolulu")
+        .format("dddd Do MMMM YYYY h:m A");
+
+      let honoluluElement = document.querySelector("#current-date");
+      honoluluElement.innerHTML = `It is ${honoluluTime} in Honolulu, Hawaii`;
+
+      let parisTime = moment()
+        .add(10, "years")
+        .tz("Europe/Paris")
+        .format("dddd Do MMMM YYYY h:m a");
+      let parisElement = document.querySelector("#future-date");
+      parisElement.innerHTML = `10 years from now, it will be ${parisTime}`;
+
+      let localTimezone = moment.tz.guess();
+      let localElement = document.querySelector("#local-time-zone");
+      localElement.innerHTML = `Your current time zone is ${localTimezone}, and the current time is ${moment().format(
+        "hh:mm a"
+      )}`;
+    </script>
+  </body>
+</html>
